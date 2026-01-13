@@ -1,0 +1,148 @@
+{
+  "project_overview": {
+    "project_name": "vue3-frontend",
+    "version": "4.10.0",
+    "main_technology": "Vue 3.4.15",
+    "build_tool": "Vite 5.2.0",
+    "language": "TypeScript/JavaScript (jsconfig.json配置)",
+    "ui_framework": "Element Plus 0.4.4-sct (自定义构建版)",
+    "state_management": "Pinia 2.0.33",
+    "router": "Vue Router 4.1.6",
+    "http_client": "Axios",
+    "css_framework": "UnoCSS",
+    "css_preprocessor": "SCSS",
+    "total_vue_files": 288,
+    "total_ts_js_files": 135,
+    "package_dependencies": 24,
+    "package_devDependencies": 18
+  },
+  "architecture_features": {
+    "multibrand_architecture": true,
+    "supported_brands": ["catarc", "mstl", "anesec", "osredm", "306", "default"],
+    "configuration_system": "三级覆盖机制（默认配置 → 品牌配置 → 运行时window配置）",
+    "dynamic_features": ["动态登录页", "动态路由", "动态主题加载"]
+  },
+  "code_statistics": {
+    "views_vue_files": 52,
+    "src_vue_files": 288,
+    "api_layer": {
+      "total_files": 18,
+      "total_lines": 3386,
+      "largest_files": {
+        "project.ts": "757行",
+        "org.ts": "582行",
+        "scan.ts": "313行",
+        "vulnerability.ts": "285行"
+      }
+    },
+    "stores": {
+      "total_modules": 16,
+      "modules": [
+        "chat",
+        "compliance",
+        "component",
+        "dataAdmin",
+        "general",
+        "license",
+        "management",
+        "org",
+        "poc",
+        "project",
+        "report",
+        "sast",
+        "scan",
+        "team",
+        "user",
+        "vulnerability"
+      ]
+    },
+    "components": {
+      "total_components": 1,
+      "total_lines": 256,
+      "location": "src/components/"
+    }
+  },
+  "key_files": {
+    "main_entry": "src/main.js (110行)",
+    "root_component": "src/App.vue (61行)",
+    "router": {
+      "main_file": "src/router/index.js",
+      "route_modules": "src/router/routes/*.js",
+      "features": ["动态登录页加载", "requiresAuth路由守卫", "模块化路由"]
+    },
+    "config_system": {
+      "main_file": "src/config/index.js",
+      "configuration_levels": [
+        "1. 默认配置 (default/目录)",
+        "2. 品牌配置 (catarc/, mstl/等)",
+        "3. 环境变量覆盖 (dev/staging/production)",
+        "4. 运行时覆盖 (window.company_env)"
+      ],
+      "configuration_types": [
+        "featureConfig (功能开关)",
+        "navigationConfig (导航菜单)",
+        "tableConfig (表格配置)",
+        "companyConfig (公司信息)",
+        "sidebarConfig (侧边栏配置)",
+        "env (环境变量)"
+      ]
+    }
+  },
+  "business_modules": {
+    "admin": "系统管理",
+    "charts": "图表管理",
+    "compliance": "合规管理",
+    "component": "组件管理",
+    "dataManagement": "数据管理",
+    "home": "首页/仪表盘",
+    "login": "登录 (多品牌实现)",
+    "management": "组织成员管理",
+    "project": "项目管理",
+    "report": "报告",
+    "scan": "扫描管理",
+    "setting": "设置",
+    "vulnerability": "漏洞管理"
+  },
+  "third_party_libs": {
+    "charts": ["ECharts 5.4.2", "D3 7.8.4", "AntV G6 4.8.24"],
+    "editor": "Monaco Editor 0.37.1",
+    "auth": "@okta/okta-signin-widget 7.6.0",
+    "analytics": "@segment/analytics-next 1.53.2",
+    "utilities": ["lodash-es 4.17.21", "moment 2.29.4", "moment-timezone 0.5.43", "qs 6.11.1", "uuid 9.0.1", "jszip 3.10.1"],
+    "composables": "@vueuse/core 10.7.2",
+    "i18n": "vue-i18n 9.2.2"
+  },
+  "build_features": {
+    "target_browser": "Chrome 100+",
+    "minification": "Terser",
+    "code_splitting": true,
+    "esbuild": true,
+    "plugins": [
+      "esbuild (for .vue)",
+      "unplugin-vue-define-options",
+      "vite-plugin-inspect",
+      "UnoCSS",
+      "vite-plugin-monaco-editor"
+    ],
+    "special_configs": [
+      "Monaco Editor worker独立输出（解决CPS错误）",
+      "HubSpot集成（生产环境）",
+      "自定义CSS字符集移除"
+    ]
+  },
+  "analysis_notes": {
+    "key_insights": [
+      "多品牌架构是项目的核心设计，体现在登录页、配置系统、主题加载等多个方面",
+      "API层和Store层采用模块化设计，一一对应业务模块",
+      "配置系统采用三级覆盖机制，灵活性很高",
+      "项目使用TypeScript但使用jsconfig.json（不是tsconfig.json）",
+      "Element Plus使用自定义构建版本，可能包含定制功能"
+    ],
+    "potential_challenges": [
+      "多品牌配置系统较为复杂，新AI需要花时间理解",
+      "API文件project.ts有757行内容，属于大文件",
+      "Store层有16个模块，各模块的职责需要清晰文档",
+      "路由模块化和动态加载机制需要解释"
+    ]
+  }
+}
