@@ -83,12 +83,14 @@ _暂无_
 
 ### 🔵 进行中 (In Progress)
 
-- [2026-01-13_license-conflict-detection-settings.md](./features/2026-01-13_license-conflict-detection-settings.md) - 深度许可证设置拆分与许可证冲突检测设置
-- [2026-01-23_duration-formatting-fix.md](./bugfixes/2026-01-23_duration-formatting-fix.md) - 扫描时长格式化显示修复（24h回绕与一致性优化）
+暂无
 
 ### ✅ 已完成 (Completed)
 
 - [2026-01-09_license-tree-node-children-merge.md](./bugfixes/2026-01-09_license-tree-node-children-merge.md) - 许可证树节点子节点追加与去重
+- [2026-02-02_license-tree-expand-icon-loading-bug.md](./bugfixes/2026-02-02_license-tree-expand-icon-loading-bug.md) - 许可证依赖树展开图标加载不一致修复
+- [2026-01-13_license-conflict-detection-settings.md](./features/2026-01-13_license-conflict-detection-settings.md) - 深度许可证设置拆分与许可证冲突检测设置
+- [2026-01-23_duration-formatting-fix.md](./bugfixes/2026-01-23_duration-formatting-fix.md) - 扫描时长格式化显示修复（24h回绕与一致性优化）
 
 ### 📦 已归档 (Archived)
 
